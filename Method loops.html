@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mathsss()">Math function</button>
+    <p id="jumwa"></p>
+    <p id="jumwa1"></p>
+    <h1>Switch</h1>
+    <p id="demo"></p>
+    <script>
+        function mathsss(){
+        document.getElementById("jumwa").innerHTML=Math.random();
+        document.getElementById("jumwa1").innerHTML=Math.round(Math.random()*100)
+    }
+    var day;
+    switch( new Date().getDay()){
+        case 0:
+         day = "Sunday";
+         break;
+        case 1:
+         day = "Monday";
+         break;
+        case 2:
+         day = "Tuesday";
+         break;
+        case 3:
+         day = "Wednesday";
+         break;
+        case 4:
+         day = "Thursday";
+         break;
+        case 5:
+         day = "Friday";
+         break;
+        case 6:
+         day = "Saturday";
+    }
+    document.getElementById("demo").innerHTML= "Today is " + day;
+    </script>
+</body>
+</html>

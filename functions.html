@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 id="fae">Javascript functions</h1>
+        <p>With parameters</p>
+        <button onclick="subtraction( 37, 20)"> click here</button>
+        <p id="first"></p>
+        <P>Without parameters</P>
+        <button onclick="addition()">press here</button>
+        <p id="second"></p>
+        <button onclick="calc( 7,2)">calculations</button>
+        <p id="third"></p>
+        <p id="fourth"></p>
+        <p id="fifth"></p>
+        <button onclick="display()">click</button>
+        <p id="katty"></p>
+        <p id="cindy"></p>
+    </center>
+    <script>
+        document.getElementById("fae").innerText="Functions in Javascript";
+        function subtraction( val1, val2){
+       document.getElementById("first").innerHTML=val1+val2;
+        }
+        function addition(){
+            var j=70;
+            var k=5;
+            document.getElementById("second").innerHTML=j+k;
+        }
+        function calc(r,s){
+        document.getElementById("third").innerHTML=r + " + " + s + " = " + (r+s);
+        document.getElementById("fourth").innerHTML=r + " - " + s + " = " + (r-s);
+        document.getElementById("fifth").innerHTML=r + " x " + s + " = " + (r*s);
+        }
+        var results=function(p,q){ return p/q };
+            document.write(results(6,2));
+          var name="Jumwa";
+          var myname="Faith";
+          function display(){
+            var myname="Faith";
+            document.getElementById("katty").innerHTML= name+" " + myname;
+          }
+          document.getElementById("cindy").innerHTML= name+" " + myname;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Classes in javascript</h2>
+    <p id="student1"></p>
+    <p id="student2"></p>
+    <script>
+        
+        class student{
+
+constructor(name,yob){
+
+this.name=name;
+
+this.yob=yob;
+
+}
+
+//create a method to calculate the age
+
+age(){
+
+let date=new Date();//gets the current date
+
+return date.getFullYear()-this.yob;
+
+}
+
+}
+
+//object to execute the class
+
+student1=new student("Purity",2010);
+
+document.getElementById("student1").innerHTML="Student name:"+student1.name + " <br>Student's age:"+student1.age();
+
+</script>
+</body>
+</html>

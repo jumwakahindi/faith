@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    li:nth-child(even){
+        background-color:aqua;
+        color:black;
+    }
+    li:nth-child(odd){
+        background-color:blue;
+        color:black;
+    }
+    .sec:hover{
+        background-color:blue;
+        color:black;
+    }
+    .decorated::after{
+        Content:"SMART";
+        color:red;
+    }
+    .decorated::before{
+        Content:"SMART";
+        color:red;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <img src="2 cc.jpg" width="90" height="90">
+        <br>
+        <br>
+        <input type="text">
+        <br>
+        <br>
+        <input type="password">
+        <br>
+        <br>
+        <button class="sec">click here</button>
+        <ul>
+            <li class="list">JS</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+        </ul>
+        <div class="decorated">Content</div>
+    </center>
+</body>
+</html>

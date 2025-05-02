@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>JS Array</h1> 
+ <p id="demo"></p> 
+ <h2>Methods of arrays</h2>
+ <p id="clothes"></p>
+ <p id="clothes1"></p>
+ <p id="clothes2"></p> 
+ <p id="jumwa"></p>
+ <script>
+    var friends=[
+        "Joyce","Preaan","Angel"
+    ]
+    document.getElementById("demo").innerHTML=friends[0]
+    
+    var clothes=["Dress","Skirt","Shirt"];
+    document.getElementById("clothes").innerHTML=clothes.join("*");
+    document.getElementById("clothes1").innerHTML=clothes.pop();
+    document.getElementById("clothes2").innerHTML=clothes;
+
+    function add(p,q){
+        return p+q;
+    }
+    function average(p,q){
+        return(p+q)/2;
+    }
+    let result=average(30,40);
+    document.getElementById("jumwa").innerHTML=result;
+ </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Multiplication functions</h1>
+        <p>With parameters</p>
+        <button onclick="multiplication( 65, 24)"> press here</button>
+        <p id="mwenga"></p>
+        <P>Without parameters</P>
+        <button onclick="multiply()">click here</button>
+        <p id="mbiri"></p>
+    </center>
+    <script>
+        function multiplication( val1, val2){
+       document.getElementById("mwenga").innerHTML=val1*val2;
+        }
+        function multiply(){
+            var f=43;
+            var l=23;
+            document.getElementById("mbiri").innerHTML=f*l;
+        }
+    </script>    
+</body>
+</html>
+
+
+

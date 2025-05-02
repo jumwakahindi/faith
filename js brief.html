@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript while loop</h1>
+    <p id="demo"></p>
+    <h1>click here for more functions</h1>
+    <button onclick="myFunction()">click here</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+    <script>
+        var text="";
+        var i=0;
+        while(i<10){
+            text += "<b> The number is "+ i;
+                i++;
+        }
+        document.getElementById("demo").innerHTML=text;
+
+
+        function myFunction(){
+            var greeting;
+            var time =new Date().getHours();
+
+            if(time < 10){
+                greeting= "Good morning";
+            }
+            else if(time < 20){
+                greeting= "Good day";
+            }
+            else{
+                greeting= "Good evening";
+            }
+        }
+        document.getElementById("hour").innerHTML="The current Hour is :" + time;
+        document.getElementById("greet").innerHTML=greeting;
+
+       
+    </script>
+</body>
+</html>

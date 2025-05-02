@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .fixed{
+            position:fixed;
+            top:0px;
+            left:30px;
+            background-color:black;
+            color:white;
+        }
+        .sticky{
+            position:fixed;
+            left:2px;
+            bottom:30px;
+            background-color:red;
+            color:white;
+        }
+        .third{
+            position:relative;
+            height:300px;
+            width:1000px;
+            background:url(mm.jpg) no-repeat center;
+            margin:50px; 
+            background-size:cover;
+        }
+        .text{
+            position:absolute;
+            background-color:black;
+            color:white;
+            top:60%;
+            left:10%;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="third">
+<body>
+    <div class="fixed"> Navigation bar</div>
+    <div class="sticky">sticky</div>
+    <p class="text">Enjoy coding</p>
+    <p class="text">Learning HTML and CSS is amazing <br><br>Continue exploring the world of tech</p>
+</body>
+</div>
+</html>

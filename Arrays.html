@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>ARRAYS</h1> 
+ <p id="kafei"></p> 
+ <h2>Methods of arrays</h2>
+ <p id="kaprishy"></p>
+ <p id="kaprishy1"></p>
+ <p id="kaprishy2"></p>
+ <h2>Functions</h2>
+ <p id="kadesh"></p>
+ <script>
+    var phones=[
+        "samsung","x2&x20","iphone promax","infinix"
+    ]
+    document.getElementById("kafei").innerHTML=phones[2]
+    
+    var colors=["pink","blue","yellow","green"];
+    document.getElementById("kaprishy").innerHTML=colors.join("*");
+    document.getElementById("kaprishy1").innerHTML=colors.pop();
+    document.getElementById("kaprishy2").innerHTML=colors;
+
+    function add(v,y,z,o){
+        return v+y+z+o;
+    }
+    function average(v,y,z,o){
+        return(v+y+z+o)/4;
+    }
+    let result=average(30,40,50,80);
+    document.getElementById("kadesh").innerHTML=result;
+ </script>
+</body>
+</html>

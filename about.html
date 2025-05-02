@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        li:nth-child(even){
+            color:red;
+        }
+        li:nth-child(odd){
+            color:blue;
+        }
+        .first:hover{
+            background-color: blue;
+            color: black;
+        }
+        .decorated::after{
+            content:"BIG";
+            color:red;
+
+        }
+        .decorated::before{
+            content:"BIG";
+            color:red;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="mbg.jpg" width="350" height="150">
+            <ul>
+        <li><a href="school.html">school</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+        </ul>
+        </nav>
+        </header>
+        <div class="decorated">content</div>
+        <h1>LIBRARY BOOK ISSUANCE RECORDS</h1>
+        <hr>
+     <table border="3" width="100%">
+        <tr>
+        <th>Name</th> 
+        <th>Adm no.</th>
+        <th>Book</th>   
+        <th>Date of issue</th>
+        </tr>
+        <tr><td>Neyleen Obuche</td>
+         <td>7078</td> 
+         <td>KMF Biology</td>
+         <td>13/3/2022</td>  
+         <tr><td>Reyson Juma</td>
+        <td>7342</td>
+        <td> Chemistry</td>
+        <td>20/4/2023</td></tr>
+        <tr><td>Leah Osmond</td>
+        <td>6745</td>
+        <td>kiswahili mm</td>
+        <td>04/1/2023</td></tr>
+        <tr><td>Vivian Sammy</td>
+        <td>7890</td>
+        <td>Maths</td>
+         <td>12/5/2023</td></tr>
+        </tr>
+     </table>
+     <h3 class="first">The school administration</h3>
+     <hr>
+     <ol>
+        <li>Okigbo Bravoo-Principal</li>
+        <li>Kinyumu Agnes- Deputy principal</li>
+        <li>Sharon Mbithe-Deputy principal</li>
+        <li>Ouma Joseph-Dean of studies</li>
+     </ol>
+     <ul><li>Frida Sheikh-Matron</li>
+    <li>Rosemary Sally-Librarian</li>
+    <li>Sarah Muthengi-Secretary</li>
+<li>Fahimah Said-Islamic Union Teacher</li>
+<li>Godbless Angel-Christian Union Teacher</li></ul>
+<dl><dt>GIT B</dt><dd>Get it Right Biology</dd>
+<dt>TPM</dt><dd>Typical Mathematics</dd></dl>
+    </center> <section>
+        <nav>
+            <ul class="pagination">
+                <li class="page-item"> <a class="page-link" href="#"> next</a></li>
+                <li class="page-item"> <a class="page-link" href="#">1</a></li>
+                <li class="page-item"> <a class="page-link" href="#">2</a></li>
+                <li class="page-item"> <a class="page-link" href="#">3</a></li>
+                <li class="page-item"> <a class="page-link" href="#">prev</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+</html>

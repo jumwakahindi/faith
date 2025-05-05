@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting an array</title>
+    </head>
+    <body>
+        <h2>Javascript sort array</h2>
+        <button onclick="ascending()">Ascending Order</button>
+        <button onclick="descending()">Descending Order</button>
+        <p id="mapped"></p>
+        <p id="Output"></p>
+        <script>
+            var points=[90, 20,10,60,40,80,70,45,75];
+            document.getElementById("Output").innerHTML=points;
+            function ascending(){
+                points.sort(function (a,b){return a-b});
+                document.getElementById("Output").innerHTML=points;
+            }
+            function descending(){
+                points.sort(function (a,b){return b-a});
+                document.getElementById("Output").innerHTML=points;
+            }
+            function multiply(num){
+                return num*2;
+            }
+            document.getElementById("mapped").innerHTML=points.map(multiply);
+        </script>
+    </body>
+</html>

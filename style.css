@@ -1,0 +1,33 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: #5679;
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+.container{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 400px;
+}
+h1{
+    text-align: center;
+}
+.balance{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.transaction form{
+    display: flex;
+    gap: 10px;
+}
+#transaction list{
+    padding: 0;
+}
+.income{
+    color: blue;
+}
+.expense{
+    color: green;
+}

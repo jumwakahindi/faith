@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App- Income and Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank App</h1>
+        <div class="balance">
+            <h2>current balance: <span id="balance">0</span></h2>
+        </div>
+        <div class="transaction form">
+            <input type="text" id="description" placeholder="Description">
+            <br>
+            <br>
+            <input type="number" id="amount" placeholder="Amount">
+            <br>
+            <br>
+            <select id="type">
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+            <br>
+            <br>
+            <button id="add-btn">Add Transaction</button>
+        </div>
+        <div class="transactions">
+         <h3>Transaction List</h3>
+         <ul id="transaction List"></ul>
+        </div>
+    </div>
+    <script scr="script1.js"></script>
+</body>
+</html>

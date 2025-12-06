@@ -6,9 +6,9 @@ sum_of_powers = 0
 temp = num
 
 while temp > 0:
-    digit = temp % 0
+    digit = temp % 10
     sum_of_powers += digit ** digits
-    temp //= 0
+    temp //= 10
 
 if sum_of_powers == num:
     print(num, "is an armstrong number")

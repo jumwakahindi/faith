@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Objects and Arrays </title>
+</head>
+<body>
+
+    <h2>Object and Array Display Using DOM</h2>
+
+    <p id="objectData"></p>
+    <p id="arrayIndex"></p>
+    <p id="arrayJoin"></p>
+    <p id="arrayPop"></p>
+
+    <script>
+        // 1. Creating an Object
+        let student = {
+            name: "Jasmine",
+            age: 19,
+            course:"civil engineering"
+        };
+
+        // Display object data using keys
+        document.getElementById("objectData").innerHTML =
+            "Name: " + student.name + "<br>" +
+            "Age: " + student.age + "<br>" +
+            "Course: " + student.course;
+
+        //2. Creating an Array
+        let subjects = ["Maths", "Physics", "Chemistry", "Kiswahili"];
+
+        // Display array value using index
+        document.getElementById("arrayIndex").innerHTML =
+            "Subject at index 1: " + subjects[1];
+
+        // 3. Using join() function
+        document.getElementById("arrayJoin").innerHTML =
+            "All Subjects (join): " + subjects.join(" | ");
+
+        // 4. Using pop() function
+        let removedSubject = subjects.pop();
+
+        document.getElementById("arrayPop").innerHTML =
+            "Removed Subject (pop): " + removedSubject + "<br>" +
+            "Remaining Array: " + subjects.join(", ");
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>

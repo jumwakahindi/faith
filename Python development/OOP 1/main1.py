@@ -7,7 +7,7 @@ class cow:
        #the variables are assigned to a class
        self.name=name
        self.age=age
- #objects ti assign values
+ #objects to assign values
 angus=cow("angus",20)
 Boran=cow("boran",15)
 print("angus is an {}".format(angus.species))
